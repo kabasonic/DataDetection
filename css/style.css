@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: black;
+}
+
+footer {
+    text-align: center;
+}
+
+span.correct { /* 0 - poprawny bit danych */
+    background-color: chartreuse;
+}
+
+span.incorrect { /* 1 - przekłamany bit danych */
+    background-color: red;
+}
+
+span.uncertain { /* 2 - niepewny bit danych */
+    background-color: yellow;
+}
+
+span.correct-redundant { /* 3 - poprawny bit redundantny */
+    background-color: aqua;
+}
+
+span.incorrect-redundant { /* 4 - przekłamany bit redundantny */
+    background-color: darkred;
+}
+
+span.uncertain-redundant { /* 5 - niepewny bit redundantny */
+    background-color: orangered;
+}
+
+span.default-type {
+    background-color: black;
+}
+
+div#main-container {
+    width: 70%;
+    margin-left: 15%;
+    background-color: white;
+    min-height: 100%;
+}
+
+div#main-container header {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: white 2px solid;
+}
+
+.transmitter,
+.receiver,
+.summary {
+    width: 80%;
+    margin: 10px;
+}
+
+h2, h3 {
+    padding: 3px 20px;
+    border: 1px solid black;
+}
+
+button {
+    width: 100px;
+    color: white;
+    background-color: #446FB3;
+    border: #446FB3 solid 1px;
+    border-radius: 8px;
+    padding: 7px 4px;
+    position: relative;
+    left: 7px;
+}
+
+button:hover {
+    background-color: #315182;
+    border-color: #315182;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+button:disabled {
+    background-color: #969696;
+    border-color: #969696;
+}
+
+button.red-btn {
+    background-color: #b24343;
+    border: #b24343 solid 1px;
+}
+
+button.red-btn:hover {
+    background-color: #a82626;
+    border: #a82626 solid 1px;
+}
+
+button.red-btn:disabled {
+    background-color: #969696;
+    border-color: #969696;
+}
+
+input {
+    border: white solid 1px;
+    border-radius: 6px;
+    padding: 7px 5px;
+    background-color: gray;
+    color: white;
+    font-size: 1.2em;
+}
+
+input:focus {
+    background-color: white;
+    color: black;
+    transition: all .2s ease-in;
+}
+
+input.narrow-input {
+    width: 40px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.span-data {
+    font-size: 1.2em;
+}
+
+table {
+    margin-top: 10px;
+}
+
+table, table tr {
+    width: 100%;
+    display: inline-block;
+}
+
+td.left-column {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
+
+td.right-column {
+    width: 70%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+input#random_data {
+    width: 70%;
+}
+
+.receiver td.left-column {
+    width: 30%;
+}
+
+.receiver td.right-column {
+    width: 65%;
+}
+
+.receiver tr {
+    padding: 10px 0;
+}
+
+span.span-negate:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.summary td.left-column {
+    width: 30%;
+}
+
+.summary td.right-column {
+    width: 55%;
+}
+
+.summary tr {
+    margin: 3px 0;
+}
+
+.comment {
+    border-bottom: none;
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
+
+.comments {
+    margin: 15px 0;
+}
+
+.comments div {
+    padding: 3px 0;
+}
+
+.comments div span {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+/*switch*/
+
+.switch-field {
+    padding: 0;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.switch-title {
+    margin-bottom: 6px;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    float: left;
+}
+
+.switch-field label {
+    display: inline-block;
+    width: 33.333%;
+    box-sizing: border-box;
+    background-color: white;
+    color: #18191c;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: none;
+    padding: 6px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition:         all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: gray;
+    box-shadow: none;
+    color: white;
+}
+
